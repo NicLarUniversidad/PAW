@@ -1,162 +1,166 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Hospital la ambulancia derrapando</title>
-</head>
-<body>
-    <header>
-        <img src="resources/img/logo.png" width="200" height="100">
-        <h1>Hospital la ambulancia derrapando</h1>
-    </header>
-    <main>
-        <nav>
-            <ul type="disc">
-                <li><a>Sobre la institución</a></li>
-                <li><a>Listados de turnos solicitados</a></li>
-                <li><a href="noticias/index.html">Últimas noticias</a></li>
-                <li><a href="listaTurnos.html">Listados de turnos solicitados</a></li>
-                <li><a href="nuevoTurno.html">Obtener un turno</a></li>
-                <li><a>Obras sociales</a></li>
-                <li><a>Profesiones y especialidades</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <a href="index.html">Home</a> - <a href="nuevoTurno.html">Nuevo turnos</a>
-        </nav>
-        <section>
-            <h2>Obtener mi turno</h2>
-            <form>
-                <h3>Complete el formulario</h3>
-                <label>Apellido y Nombre</label>
-                <input type="text">
-                <label>Correo electrónico</label>
-                <input type="email">
-                <label>Teléfono</label>
-                <input>
-                <label>Fecha de nacimiento</label>
-                <input placeholder="Día"><small>/</small><input placeholder="Mes"><small>/</small><input placeholder="Año">
-                <label>Fecha de turno</label>
-                <input placeholder="Día"><small>/</small><input placeholder="Mes"><small>/</small><input placeholder="Año"><button>Seleccionar</button>
-                <label>Hora de turno</label>
-                <input><button>Seleccionar</button>
-                <label>Médico</label>
-                <select>
-                    <option><small>Dr. Ángel</small></option>
-                    <option><small>Dr. Nico</small></option>
-                    <option><small>Dr. Pepe</small></option>
-                </select>
-                <button type="submit">Confirmar</button>
-            </form>
-            <!-- Modal: calendario -->
-            <div>
-                <button>Septiembre</button>
-                <h3>Octubre</h3>
-                <button>Noviembre</button>
-                <table>
-                    <thead>
-                        <th>Domingo</th>
-                        <th>Lunes</th>
-                        <th>Martes</th>
-                        <th>Miércoles</th>
-                        <th>Jueves</th>
-                        <th>Viernes</th>
-                        <th>Sábado</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- Moda: Horarios -->
-            <div>
-                <h4>Horarios</h4>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nombre del Hospital</title>
+    </head>
+    <body>
+        <header>
+            <img src="resources/img/logo.png" width="200" height="100">
+            <h1>Nombre del Hospital</h1>
+        </header>
+        <main>
+            <nav>
                 <ul type="disc">
-                    <li><small>No disponible</small></li>
-                    <li>
-                        <button></button>
-                        <select>
-                            <option><small>Seleccionar</small></option>
-                            <option><small>Dr. Pepe</small></option>
-                        </select>
-                    </li>
-                    <li><small>No disponible</small></li>
-                    <li><small>No disponible</small></li>
-                    <li>
-                        <button></button>
-                        <select>
-                            <option><small>Seleccionar</small></option>
-                            <option><small>Dr. Ángel</small></option>
-                            <option><small>Dr. Nico</small></option>
-                        </select>
-                    </li>
-                    <li>
-                        <button></button>
-                        <select>
-                            <option><small>Seleccionar</small></option>
-                            <option><small>Dr. Ángel</small></option>
-                            <option><small>Dr. Nico</small></option>
-                            <option><small>Dr. Pepe</small></option>
-                        </select>
-                    </li>
+                    <li><a>Sobre la institución</a></li>
+                    <li><a>Listados de turnos solicitados</a></li>
+                    <li><a href="noticias/index.html">Últimas noticias</a></li>
+                    <li><a href="listaTurnos.html">Listados de turnos solicitados</a></li>
+                    <li><a href="nuevoTurno.html">Obtener un turno</a></li>
+                    <li><a>Obras sociales</a></li>
+                    <li><a>Profesiones y especialidades</a></li>
                 </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <address>Dirección: ***********************<br>Teléfono: ************************</address>
-        <small>Todos los derechos reservados- Términos y condiciones</small>
-    </footer>
-</body>
+            </nav>
+            <nav>
+                <a href="index.html">Home</a> - <a href="nuevoTurno.html">Nuevo turnos</a>
+            </nav>
+            <section>
+                <h2>Obtener mi turno</h2>
+                <form>
+                    <h3>Complete el formulario</h3>
+                    <label>Apellido y Nombre</label>
+                    <input type="text">
+                    <label>Correo electrónico</label>
+                    <input type="email">
+                    <label>Teléfono</label>
+                    <input>
+                    <label>Fecha de nacimiento</label>
+                    <input placeholder="Día"><small>/</small><input placeholder="Mes"><small>/</small><input placeholder="Año">
+                    <label>Fecha de turno</label>
+                    <input placeholder="Día"><small>/</small><input placeholder="Mes"><small>/</small><input placeholder="Año"><button>Seleccionar</button>
+                    <label>Hora de turno</label>
+                    <input><button>Seleccionar</button>
+                    <label>Médico</label>
+                    <select>
+                        <option><small>Dr. Ángel</small></option>
+                        <option><small>Dr. Nico</small></option>
+                        <option><small>Dr. Pepe</small></option>
+                    </select>
+                    <button type="submit">Confirmar</button>
+                </form>
+                <!-- Modal: calendario -->
+                <div>
+                    <button>Septiembre</button>
+                    <h3>Octubre</h3>
+                    <button>Noviembre</button>
+                    <table>
+                        <thead>
+                            <th>Domingo</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sábado</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Moda: Horarios -->
+                <div>
+                    <h4>Horarios</h4>
+                    <ul type="disc">
+                        <li><small>No disponible</small></li>
+                        <li>
+                            <button></button>
+                            <select>
+                                <option><small>Seleccionar</small></option>
+                                <option><small>Dr. Pepe</small></option>
+                            </select>
+                        </li>
+                        <li><small>No disponible</small></li>
+                        <li><small>No disponible</small></li>
+                        <li>
+                            <button></button>
+                            <select>
+                                <option><small>Seleccionar</small></option>
+                                <option><small>Dr. Ángel</small></option>
+                                <option><small>Dr. Nico</small></option>
+                            </select>
+                        </li>
+                        <li>
+                            <button></button>
+                            <select>
+                                <option><small>Seleccionar</small></option>
+                                <option><small>Dr. Ángel</small></option>
+                                <option><small>Dr. Nico</small></option>
+                                <option><small>Dr. Pepe</small></option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <address>Dirección: ***********************<br>Teléfono: ************************</address>
+            <small>Todos los derechos reservados- Términos y condiciones</small>
+        </footer>
+    </body>
+
+
+</html>
