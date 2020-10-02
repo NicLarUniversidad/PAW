@@ -8,8 +8,6 @@
         <header>
             <img src="resources/img/logo.png" width="200" height="100">
             <h1>Nombre del Hospital</h1>
-        </header>
-        <main>
             <nav>
                 <ul type="disc">
                     <li><a href="institucional.html">Sobre la institución</a></li>
@@ -20,6 +18,8 @@
                     <li><a href="especialidades_y_Profesionales.html">Especialidades y Profesionales</a></li>
                 </ul>
             </nav>
+        </header>
+        <main>
             <nav>
                 <a href="index.html">Home</a> - <a href="nuevoTurno.html">Nuevo turnos</a>
             </nav>
@@ -34,16 +34,18 @@
                     <label>Teléfono</label>
                     <input>
                     <label>Fecha de nacimiento</label>
-                    <input placeholder="Día"><small>/</small><input placeholder="Mes"><small>/</small><input placeholder="Año">
+                    <!-- input type date -->
+                    <input placeholder="Día">/<input placeholder="Mes">/<input placeholder="Año">
                     <label>Fecha de turno</label>
-                    <input placeholder="Día"><small>/</small><input placeholder="Mes"><small>/</small><input placeholder="Año"><button>Seleccionar</button>
+                    <input placeholder="Día">/<input placeholder="Mes">/<input placeholder="Año"><button>Seleccionar</button>
                     <label>Hora de turno</label>
                     <input><button>Seleccionar</button>
                     <label>Médico</label>
+                    <!-- select incomodo en movile -->
                     <select>
-                        <option><small>Dr. Ángel</small></option>
-                        <option><small>Dr. Nico</small></option>
-                        <option><small>Dr. Pepe</small></option>
+                        <option>Dr. Ángel</option>
+                        <option>Dr. Nico</option>
+                        <option>Dr. Pepe</option>
                     </select>
                     <button type="submit">Confirmar</button>
                 </form>
@@ -121,38 +123,38 @@
                     </table>
                 </div>
                 <!-- Moda: Horarios -->
-                <div>
+                <section>
                     <h4>Horarios</h4>
                     <ul type="disc">
-                        <li><small>No disponible</small></li>
+                        <li>No disponible</li>
                         <li>
                             <button></button>
                             <select>
-                                <option><small>Seleccionar</small></option>
-                                <option><small>Dr. Pepe</small></option>
+                                <option>Seleccionar</option>
+                                <option>Dr. Pepe</option>
                             </select>
                         </li>
-                        <li><small>No disponible</small></li>
-                        <li><small>No disponible</small></li>
+                        <li>No disponible</li>
+                        <li>No disponible</li>
                         <li>
                             <button></button>
                             <select>
-                                <option><small>Seleccionar</small></option>
-                                <option><small>Dr. Ángel</small></option>
-                                <option><small>Dr. Nico</small></option>
+                                <option>Seleccionar</option>
+                                <option>Dr. Ángel</option>
+                                <option>Dr. Nico</option>
                             </select>
                         </li>
                         <li>
                             <button></button>
                             <select>
-                                <option><small>Seleccionar</small></option>
-                                <option><small>Dr. Ángel</small></option>
-                                <option><small>Dr. Nico</small></option>
-                                <option><small>Dr. Pepe</small></option>
+                                <option>Seleccionar</option>
+                                <option>Dr. Ángel</option>
+                                <option>Dr. Nico</option>
+                                <option>Dr. Pepe</option>
                             </select>
                         </li>
                     </ul>
-                </div>
+                </section>
             </section>
         </main>
         <footer>
