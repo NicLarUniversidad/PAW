@@ -24,134 +24,68 @@
                 <a href="index.html">Home</a> - <a href="nuevoTurno.html">Nuevo turnos</a>
             </nav>
             <section>
+                <!-- 
+                    Hay que verificar si se le puede otorgar el turno
+                    que pidió el usuario...
+                    Si se otorga el turno solicitado
+                        se notifica al usuario
+                        se bloquea el formulario
+                        se podría redirigir al detalle de turno
+                    Si no
+                        se notifica al usuario
+                -->
+                <dialog id="respuestaGuardado"></dialog>
                 <h2>Obtener mi turno</h2>
-                <form>
+                <form id="nuevoTurno" method="post" action="intentarGuardarTurno.php">
                     <h3>Complete el formulario</h3>
-                    <label>Apellido y Nombre</label>
-                    <input type="text">
-                    <label>Correo electrónico</label>
-                    <input type="email">
-                    <label>Teléfono</label>
-                    <input>
-                    <label>Fecha de nacimiento</label>
-                    <!-- input type date -->
-                    <input placeholder="Día">/<input placeholder="Mes">/<input placeholder="Año">
-                    <label>Fecha de turno</label>
-                    <input placeholder="Día">/<input placeholder="Mes">/<input placeholder="Año"><button>Seleccionar</button>
-                    <label>Hora de turno</label>
-                    <input><button>Seleccionar</button>
-                    <label>Médico</label>
-                    <!-- select incomodo en movile -->
-                    <select>
-                        <option>Dr. Ángel</option>
-                        <option>Dr. Nico</option>
-                        <option>Dr. Pepe</option>
-                    </select>
-                    <button type="submit">Confirmar</button>
+                    <label for="nombreApellido">Apellido y Nombre
+                        <input type="text" id="nombreApellido" autofocus tabindex="1">
+                    </label>
+                    <label for="mail">Correo electrónico
+                        <input type="email" id="mail" tabindex="2">
+                    </label>
+                    <label for="telefono">Teléfono
+                        <input type="tel" id="telefono" tabindex="3">
+                    </label>
+                    <label for="fechaNacimiento">Fecha de nacimiento
+                        <input type="date" id="fechaNacimiento" tabindex="4">
+                    </label>
+                    <label for="fechaTurno">Fecha de turno
+                        <input type="date" id="fechaTurno" tabindex="5">
+                    </label>
+                    <label for="hora">Hora de turno
+                        <input type="time" id="hora" readonly><button id="btnHorarios" tabindex="6">Seleccionar</button>
+                    </label>
+                    <label for="medico">Médico
+                        <select id="medico" tabindex="7">
+                            <option>Dr. Ángel</option>
+                            <option>Dr. Nico</option>
+                            <option>Dr. Pepe</option>
+                        </select>
+                    </label>
+                    <button type="submit" tabindex="8">Confirmar</button>
                 </form>
-                <!-- Modal: calendario -->
-                <div>
-                    <button>Septiembre</button>
-                    <h3>Octubre</h3>
-                    <button>Noviembre</button>
-                    <table>
-                        <thead>
-                            <th>Domingo</th>
-                            <th>Lunes</th>
-                            <th>Martes</th>
-                            <th>Miércoles</th>
-                            <th>Jueves</th>
-                            <th>Viernes</th>
-                            <th>Sábado</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                                <td><a href="nuevoTurno.html?Fecha={Día}">{Día}</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- Moda: Horarios -->
-                <section>
+                <!-- Modal: Horarios -->
+                <section id="modalHorarios">
                     <h4>Horarios</h4>
                     <ul type="disc">
-                        <li>No disponible</li>
+                        <li>12:00 No disponible</li>
                         <li>
-                            <button></button>
-                            <select>
-                                <option>Seleccionar</option>
-                                <option>Dr. Pepe</option>
-                            </select>
+                            12:30
+                            <button>+</button>
+                            Agregar
                         </li>
-                        <li>No disponible</li>
-                        <li>No disponible</li>
+                        <li>13:00 No disponible</li>
+                        <li>13:30 No disponible</li>
                         <li>
-                            <button></button>
-                            <select>
-                                <option>Seleccionar</option>
-                                <option>Dr. Ángel</option>
-                                <option>Dr. Nico</option>
-                            </select>
+                            14:00
+                            <button>+</button>
+                            Agregar
                         </li>
                         <li>
-                            <button></button>
-                            <select>
-                                <option>Seleccionar</option>
-                                <option>Dr. Ángel</option>
-                                <option>Dr. Nico</option>
-                                <option>Dr. Pepe</option>
-                            </select>
+                            14:30
+                            <button>+</button>
+                            Agregar
                         </li>
                     </ul>
                 </section>
