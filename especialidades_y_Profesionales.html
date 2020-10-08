@@ -16,21 +16,22 @@
                     <li><a href="/noticias/index.html">Últimas noticias</a></li>
                     <li><a href="/obrasSociales.html">Obras sociales</a></li>
                     <li><a>Especialidades y Profesionales</a></li>
+                    <li><a id="btnAtras" onclick="atras()">Atras</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <p>Se encuentra en <a href="/index.html">Inicio</a> - <a href="/especialidades_y_Profesionales.html">Especialidades y profeciones</a></p>
-            <h2>Atras</h2>
             <!--Seleccion de 2 botones: Especialidades Medicas y Profesionales -->
             <article>
-                <h1> Selecione una opcion:</h1>
+                <header><h2> Selecione una opcion:</h2></header>
                 <button> Profesionales</button>
                 <button> Especialidades Médicas</button>
             </article>
             
             <!--Elementos que aparecer al presionar boton de Especialdides Medicas-->
             <article>
+                <header><h2> Filtrar</h2></header>
                 <p> por palabra clave:</p>
                 <input type="text" value="Ingrese Especialidad">
                 <button> Buscar</button>
@@ -52,25 +53,26 @@
             
             <!--Resultados de la busqueda de Especialdides Medicas-->
             <article>
-                <h2> Resultados de la Búsqueda:</h2>
+                <header><h2> Filtro por especialidad médica</h2></header>
                 <section>
+                    <header><h3> Resultados:</h3></header>
                     <label> A**********</label>
                     <label> A**********</label>
                     <label> A**********</label>
                     <label> A**********</label>
                     <label> A**********</label>
-                    <button> Anterior</button>
-                    <button> 1</button>
-                    <button> 2</button>
-                    <button> 3</button>
-                    <button>4</button>
-                    <button>Siguiente</button>
                 </section>
+                <button> Anterior</button>
+                <button> 1</button>
+                <button> 2</button>
+                <button> 3</button>
+                <button> 4</button>
+                <button>Siguiente</button>
             </article>
 
             <!--Resultados al Selecionar una Especialdiad Medica-->
             <article>
-                <h1>Especialdiad Selecionada</h1>
+                <header><h2>Especialdiad Selecionada</h2></header>
                 <p>*****cargo*****</p>
                 <img src="/resources/img/Foto-perfil.png" alt="foto de perfil" height="40">
                 <h2>Dr. Pepe</h2>
@@ -82,6 +84,7 @@
 
             <!--Elementos que aparecer al presionar boton de Profesionales-->
             <article>
+                <header><h2>Profecionales</h2></header>
                 <p> por palabra clave:</p>
                 <input type="text" value="Ingrese Nombre y Apellido">
                 <button> Buscar</button>
@@ -103,8 +106,9 @@
             
             <!--Resultados de la busqueda de Profesionales-->
             <article>
-                <h2> Resultados de la Búsqueda:</h2>
+                <h2> Filtro por profesionales</h2>
                 <section>
+                    <h3> Resultados de la Búsqueda:</h3>
                     <img src="/resources/img/Foto-perfil.png" alt="foto de perfil" height="20">
                     <label> A**********</label>
                     <img src="/resources/img/Foto-perfil.png" alt="foto de perfil" height="20">
