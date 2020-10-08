@@ -6,23 +6,21 @@
     </head>
     <body>
         <header>
-            <img src="resources/img/logo.png" width="200" height="100">
+            <img src="/resources/img/logo.png" alt="" width="200" height="100">
             <h1>Nombre del Hospital</h1>
             <nav>
-                <ul type="disc">
-                    <li><a href="institucional.html">Sobre la institución</a></li>
-                    <li><a href="listaTurnos.html">Listados de turnos solicitados</a></li>
+                <ul>
+                    <li><a href="/institucional.html">Sobre la institución</a></li>
+                    <li><a href="/listaTurnos.html">Listados de turnos solicitados</a></li>
                     <li><a>Obtener un turno</a></li>
-                    <li><a href="noticias/index.html">Últimas noticias</a></li>
-                    <li><a href="obrasSociales.html">Obras sociales</a></li>
-                    <li><a href="especialidades_y_Profesionales.html">Especialidades y Profesionales</a></li>
+                    <li><a href="/noticias/index.html">Últimas noticias</a></li>
+                    <li><a href="/obrasSociales.html">Obras sociales</a></li>
+                    <li><a href="/especialidades_y_Profesionales.html">Especialidades y Profesionales</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <nav>
-                <a href="index.html">Home</a> - <a href="nuevoTurno.html">Nuevo turnos</a>
-            </nav>
+             <a href="/index.html">Home</a> - <a href="/nuevoTurno.html">Nuevo turnos</a>
             <section>
                 <!-- 
                     Hay que verificar si se le puede otorgar el turno
@@ -54,8 +52,9 @@
                         <input type="date" id="fechaTurno" tabindex="5">
                     </label>
                     <label for="hora">Hora de turno
-                        <input type="time" id="hora" readonly><button id="btnHorarios" tabindex="6">Seleccionar</button>
+                        <input type="time" id="hora" readonly>
                     </label>
+                    <button id="btnHorarios" >Seleccionar</button>
                     <label for="medico">Médico
                         <select id="medico" tabindex="7">
                             <option>Dr. Ángel</option>
@@ -63,12 +62,12 @@
                             <option>Dr. Pepe</option>
                         </select>
                     </label>
-                    <button type="submit" tabindex="8">Confirmar</button>
+                    <button type="submit">Confirmar</button>
                 </form>
                 <!-- Modal: Horarios -->
                 <section id="modalHorarios">
                     <h4>Horarios</h4>
-                    <ul type="disc">
+                    <ul>
                         <li>12:00 No disponible</li>
                         <li>
                             12:30
@@ -96,6 +95,4 @@
             <small>Todos los derechos reservados- Términos y condiciones</small>
         </footer>
     </body>
-
-
 </html>
