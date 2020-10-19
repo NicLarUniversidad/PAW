@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Nombre del Hospital</title>
+        <link rel="stylesheet" type="text/css" href="/css/default.css">
     </head>
     <body>
-        <header>
-            <img src="/resources/img/logo.png" alt="" width="200" height="100">
-            <h1>Nombre del Hospital</h1>
-            <nav>
-                <ul>
+        <header class="body-header">
+            <img class="header-logo" src="/resources/img/logo.png" alt="" width="200" height="100">
+            <h1 class="header-title">Nombre del Hospital</h1>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
                     <li><a href="/institucional.html">Sobre la institución</a></li>
                     <li><a>Listados de turnos solicitados</a></li>
                     <li><a href="/nuevoTurno.html">Obtener un turno</a></li>
@@ -21,14 +22,15 @@
             </nav>
         </header>
         <main>
-            <p>Se encuentra en <a href="/index.html">Inicio</a> - <a href="/listaTurnos.html">Lista de turnos</a></p>
+            <nav class="breadcrumb"><p>Se encuentra en <a href="/index.html">Inicio</a> - <a href="/listaTurnos.html">Lista de turnos</a></p></nav>
             
-            <section>
+            <section class="main-section">
                 <header><h2>Lista de turnos</h2></header>
                 <section id="filtros">
-                    <button>Profesiones/Médicos</button>
-                    <button>Fecha/Día</button>
-                    <form>
+                    <button class="btn-prof-filter">Profesiones/Médicos</button>
+                    <button class="btn-date-filter">Fecha/Día</button>
+                    
+                    <form class="filter" >
                         <label>Profesión</label>
                         <select>
                             <option>Cirujano</option>
@@ -44,7 +46,52 @@
                         <button>Quitar filtros</button>
                         <button>Filtrar</button>
                     </form>
-                    <div>
+                </section>
+                <section class="turn-list">
+                    <header><h3>Listado de turnos</h3></header>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Médico</th>
+                                <th>Paciente</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="pair">
+                                <td><time datetime="2020-10-26 12:00">2020-10-26 12:00</time></td>
+                                <td><p>Dr. Pepe</p></td>
+                                <td><p>Marcelo</p></td>
+                                <td><p>Finalizado</p></td>
+                                <td><button class="delete">Eliminar</button></td>
+                                <td><button class="attend">Atendido</button></td>
+                                <td><button class="details">Detalles</button></td>
+                            </tr>
+                            <tr class="unpair">
+                                <td><time datetime="2020-10-26 12:00">2020-10-26 12:00</time></td>
+                                <td><p>Dr. Nico</p></td>
+                                <td><p>Facundo</p></td>
+                                <td><p>Finalizado</p></td>
+                                <td><button class="delete">Eliminar</button></td>
+                                <td><button class="attend">Atendido</button></td>
+                                <td><button class="details">Detalles</button></td>
+                            </tr>
+                            <tr class="pair">
+                                <td><time datetime="2020-10-26 12:00">2020-10-26 12:00</time></td>
+                                <td><p>Dr. Ángel</p></td>
+                                <td><p>María</p></td>
+                                <td><p>Finalizado</p></td>
+                                <td><button class="delete">Eliminar</button></td>
+                                <td><button class="attend">Atendido</button></td>
+                                <td><button class="details">Detalles</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="date-filter">
                         <button>Septiembre</button>
                         <h3>Octubre</h3>
                         <button>Noviembre</button>
@@ -118,51 +165,6 @@
                             </tbody>
                         </table>
                     </div>
-                </section>
-                <section>
-                    <header><h3>Listado de turnos</h3></header>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Fecha</th>
-                                <th>Médico</th>
-                                <th>Paciente</th>
-                                <th>Estado</th>
-                                <th>Acciones</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><time datetime="2020-10-26 12:00">2020-10-26 12:00</time></td>
-                                <td><p>Dr. Pepe</p></td>
-                                <td><p>Marcelo</p></td>
-                                <td><p>Finalizado</p></td>
-                                <td><button>Eliminar</button></td>
-                                <td><button>Atendido</button></td>
-                                <td><button>Detalles</button></td>
-                            </tr>
-                            <tr>
-                                <td><time datetime="2020-10-26 12:00">2020-10-26 12:00</time></td>
-                                <td><p>Dr. Nico</p></td>
-                                <td><p>Facundo</p></td>
-                                <td><p>Finalizado</p></td>
-                                <td><button>Eliminar</button></td>
-                                <td><button>Atendido</button></td>
-                                <td><button>Detalles</button></td>
-                            </tr>
-                            <tr>
-                                <td><time datetime="2020-10-26 12:00">2020-10-26 12:00</time></td>
-                                <td><p>Dr. Ángel</p></td>
-                                <td><p>María</p></td>
-                                <td><p>Finalizado</p></td>
-                                <td><button>Eliminar</button></td>
-                                <td><button>Atendido</button></td>
-                                <td><button>Detalles</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </section>
             </section>
         </main>

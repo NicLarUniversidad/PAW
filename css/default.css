@@ -1,0 +1,323 @@
+:root{
+    font-size: 2.5vh;
+    position: absolute;
+}
+
+body {
+    background-color: blue;
+    margin: 0;
+}
+
+.header-logo{
+    background-color: green;
+    width: 10vw;
+    height: 12vh;
+    margin: 0;
+}
+
+.header-title{
+    background-color: cyan;
+    position: absolute;
+    left: 15%;
+    top: 0%;
+    width: 80%;
+    text-align: center;
+}
+
+.body-header{
+    background-color: blue; 
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+}
+
+.header-nav{
+    position: absolute;
+    background-color: violet;
+    width: 10vw; 
+    margin: 0;
+    height: 87vh;
+    top: 12vh;
+}
+main{
+    position: absolute;
+    width: 80vw; 
+    height: 70%;
+    background-color: blue;
+    left: 10vw;
+    top: 12vh;
+    margin: 0;
+}
+
+.breadcrumb{
+    text-align: end;
+    width: 30vw; 
+    left: 50vw;
+    position: absolute;
+    z-index: 1000;
+    top: 5%;
+}
+
+.main-section{
+    top: 0;
+    /* width: 100%; 
+    height: 40vh;  */
+    width: 90vw; 
+    height: 78vh; 
+    text-align: center;
+    margin: 0;
+    position: absolute;
+}
+
+.news-section{
+    width: 80vw; 
+    height: 30vh; 
+    position: absolute;
+    left: 5vw;
+    top: 40vh;
+    background-color: aqua;
+    overflow: auto;
+}
+
+.news-section video{
+    width: 20vw; 
+    height: 20vh; 
+    margin: 0;
+}
+
+.pictures{
+    width: 80vw; 
+    height: 25vh;
+    top: 10vh;
+    left: 5vw;
+    position: absolute;
+}
+
+footer{
+    position: absolute;
+    top: 90vh;
+    left: 0vw;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    color: green;
+    text-align: center;
+}
+
+.main-section header{
+    background-color: deepskyblue;
+    width: 90vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: absolute;
+}
+
+.news-section header{
+    visibility: hidden;
+}
+
+.header-nav-list{
+    background-color: green;
+    top: 1vh;
+    left: 1vw;
+    width: 8vw;
+    height: 76vh;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav-list li{
+    list-style: none;
+    left: 0;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+/* Sección noticias*/
+.main-section-news{
+    top: 0;
+    width: 90vw; 
+    height: 78vh; 
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: aqua;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 7px 7px;
+    grid-template-areas:
+    "new new"
+    "new new";
+    padding-top: 10vh; */
+}
+
+.main-section-news .new-1-1{
+    width: 30vw;
+    height: 30vh;
+    top: 13vh;
+    left: 40vw;
+    background-color: rgba(139, 139, 139, 0.3);
+    position: absolute;
+    padding: 0;
+}
+
+.main-section-news .new-1-2{
+    width: 30vw;
+    height: 30vh;
+    top: 13vh;
+    left: 5vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    padding: 0;
+}
+
+.main-section-news .new-2-1{
+    width: 30vw;
+    height: 30vh;
+    top: 47vh;
+    left: 5vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    padding: 0;
+}
+
+.main-section-news .new-2-2{
+    width: 30vw;
+    height: 30vh;
+    top: 47vh;
+    left: 40vw;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    padding: 0;
+}
+
+.main-section-news .new-left{
+    left: 50vw;
+}
+
+.main-section-news header{
+    background-color: deepskyblue;
+    width: 90vw;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: absolute;
+}
+
+.main-section-news img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main-section-news a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*Lista de turnos*/
+
+.filter{
+    visibility: hidden;
+}
+
+.turn-list{
+    /*visibility: hidden;*/
+    background-color: aqua;
+    top: 20vh;
+    left: 10vh;
+    width: 70vw;
+    height: 50vh;
+    position: absolute;
+    overflow: auto;
+}
+
+.turn-list th{
+    width: 10vw;
+    margin: 0;
+    background-color: lightgreen;
+}
+
+.turn-list thead{
+    background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+}
+
+.turn-list header{
+    visibility: hidden;
+    width: 0;
+}
+
+.turn-list table{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.turn-list .pair{
+    background-color: aqua;
+}
+
+.turn-list .unpair{
+    background-color: deepskyblue;
+}
+
+.turn-list td{
+    position: relative;
+}
+
+.turn-list tr button{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.date-filter {
+    visibility: hidden;
+}
+
+.delete{
+ background-color: red;
+}
+
+.attend{
+    background-color: lightgreen;
+}
+
+.details{
+    background-color: aqua;
+}
+
+.btn-prof-filter{
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    width: 10vw;
+    height: 7vh;
+    background-color: deepskyblue;
+}
+
+.btn-date-filter{
+    position: absolute;
+    top: 12vh;
+    left: 40vw;
+    width: 10vw;
+    height: 7vh;
+    background-color: deepskyblue;
+}

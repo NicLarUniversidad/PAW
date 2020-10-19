@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>Nombre del Hospital</title>
+        <link rel="stylesheet" type="text/css" href="/css/default.css">
     </head>
     <body>
-        <header>
-            <img src="/resources/img/logo.png" alt="" width="200" height="100">
-            <h1>Nombre del Hospital</h1>
-            <nav>
-                <ul>
+        <header class="body-header">
+            <img class="header-logo" src="/resources/img/logo.png" alt="" width="200" height="100">
+            <h1 class="header-title">Nombre del Hospital</h1>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
                     <li><a href="/institucional.html">Sobre la institución</a></li>
                     <li><a href="/listaTurnos.html">Listados de turnos solicitados</a></li>
                     <li><a href="/nuevoTurno.html">Obtener un turno</a></li>
@@ -20,18 +21,18 @@
             </nav>
         </header>
         <main>
-            <p>Se encuentra en <a href="/index.html">Inicio</a></p>
+            <nav class="breadcrumb"><p>Se encuentra en <a href="/index.html">Inicio</a></p></nav>
             <!--Por ahora como no sabemos hacer un carrusel, lo dejaremos como una img-->
-            <section>
-                <header><h2>Bienvenido</h2></header>
-                <img src="/resources/img/Img-Carrusel.png" alt="Imagen de la Institucion" width="1000">
+            <section class="main-section">
+                <header><h2>Bienvenidos</h2></header>
+                <img class="pictures" src="/resources/img/Img-Carrusel.png" alt="Imagen de la Institucion" width="1000">
             </section>
-            <section>
+            <section class="news-section">
                 <header><h2>Más sobre nosotros</h2></header>
                 <video src="/resources/video/video.mp4" controls></video>
                 <video src="/resources/video/video.mp4" controls></video>
                 <video src="/resources/video/video.mp4" controls></video>
-            </section>
+               </section>
 
         </main>
         <footer>
