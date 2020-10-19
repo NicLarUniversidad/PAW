@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <script src="\js\main.js"></script>
         <meta charset="UTF-8">
         <title>Nombre del Hospital</title>
         <link rel="stylesheet" type="text/css" href="/css/default.css">
@@ -27,25 +28,26 @@
             <section class="main-section">
                 <header><h2>Lista de turnos</h2></header>
                 <section id="filtros">
-                    <button class="btn-prof-filter">Profesiones/Médicos</button>
-                    <button class="btn-date-filter">Fecha/Día</button>
-                    
-                    <form class="filter" >
-                        <label>Profesión</label>
-                        <select>
-                            <option>Cirujano</option>
-                            <option>Nutricionista</option>
-                            <option>Guardia</option>
-                        </select>
-                        <label>Médico</label>
-                        <select>
-                            <option>Dr. Ángel</option>
-                            <option>Dr. Nico</option>
-                            <option>Dr. Pepe</option>
-                        </select>
-                        <button>Quitar filtros</button>
-                        <button>Filtrar</button>
-                    </form>
+                    <button class="btn-prof-filter" onclick="ShowFilter()">Profesiones/Médicos</button>
+                    <button class="btn-date-filter" onclick="ShowDateFilter()">Fecha/Día</button>
+                    <div class="filter-container" id="filter-container" ondblclick="HideFilter()">
+                        <form class="filter" id="filter" onclick="ShowFilter()">
+                            <label>Profesión</label>
+                            <select>
+                                <option>Cirujano</option>
+                                <option>Nutricionista</option>
+                                <option>Guardia</option>
+                            </select>
+                            <label>Médico</label>
+                            <select>
+                                <option>Dr. Ángel</option>
+                                <option>Dr. Nico</option>
+                                <option>Dr. Pepe</option>
+                            </select>
+                            <button>Quitar filtros</button>
+                            <button>Filtrar</button>
+                        </form>
+                    </div>
                 </section>
                 <section class="turn-list">
                     <header><h3>Listado de turnos</h3></header>
@@ -91,7 +93,9 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="date-filter">
+                </section>
+                <div class="date-filter-container" id="date-filter-container" ondblclick="HideDateFilter()">
+                    <div class="date-filter" id="date-filter">
                         <button>Septiembre</button>
                         <h3>Octubre</h3>
                         <button>Noviembre</button>
@@ -165,7 +169,7 @@
                             </tbody>
                         </table>
                     </div>
-                </section>
+                </div>
             </section>
         </main>
         <footer>

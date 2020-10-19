@@ -229,6 +229,93 @@ footer{
 
 .filter{
     visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    background-color: lightgreen;
+    width: 30vw;
+    height: 30vh;
+    top: 15vh;
+    left: 17vw;
+    border-radius: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 7px 7px;
+    grid-template-areas:
+    "label label"
+    "label label"
+    "button button";
+    padding-top: 10vh;
+    padding: 6vw;
+}
+
+.filter-container{
+    visibility: hidden;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+.date-filter{
+    visibility: hidden;
+    position: absolute;
+    z-index: 1000;
+    background-color: green;
+    width: 30vw;
+    height: 30vh;
+    top: 15vh;
+    left: 17vw;
+    border-radius: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 7vh 1fr;
+    gap: 7px 7px;
+    grid-template-areas:
+    "button h3 button"
+    "table table table";
+    padding: 7vh;
+}
+
+.date-filter button{
+    max-width: 10vw;
+    background-color: deepskyblue;
+}
+
+.date-filter table{
+    position: absolute;
+    left: 5vw;
+    top: 16vh;
+    background-color: aqua;
+    border-radius: 1vw;
+    border:none;
+}
+
+.date-filter td {
+    border-left:2px solid black;
+    margin: 0;
+}
+
+.date-filter thead{
+    background-color: lightgreen;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+}
+
+.date-filter-container{
+    visibility: hidden;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 
 .turn-list{
@@ -240,6 +327,7 @@ footer{
     height: 50vh;
     position: absolute;
     overflow: auto;
+    border-radius: 1vw;
 }
 
 .turn-list th{
