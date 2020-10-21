@@ -231,22 +231,28 @@ footer{
     visibility: hidden;
     position: absolute;
     z-index: 1000;
-    background-color: lightgreen;
+    background-color: purple;
     width: 30vw;
     height: 30vh;
     top: 15vh;
     left: 17vw;
     border-radius: 4vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 7px 7px;
     grid-template-areas:
-    "label label"
-    "label label"
-    "button button";
+    "label"
+    "label"
+    "div";
     padding-top: 10vh;
     padding: 6vw;
+}
+
+.filter label{
+    font-size: 0.7em;
+    position: relative;
+    text-align: initial;
 }
 
 .filter-container{
@@ -259,6 +265,36 @@ footer{
     top: 0;
     left: 0;
     margin: 0;
+}
+
+.filter button{
+    border-radius: 1vw;
+    width: 40%;
+    height: 100%;
+}
+
+.filter label select{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    height: 75%;
+    width: 70%;
+}
+
+.filter select{
+    border-radius: 1vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("/resources/img/UI/SelectArrow.jpg"); 
+}
+
+.filter .btn-remove-filters{
+    background-color: white;
+}
+
+.filter .btn-filter{
+    background-color: lightgreen;
 }
 
 .date-filter{
@@ -386,7 +422,7 @@ button{
 }
 
 .delete{
-    background-color: red;
+    background-color: gray;
 }
 
 .attend{
@@ -413,4 +449,128 @@ button{
     width: 10vw;
     height: 7vh;
     background-color: deepskyblue;
+}
+
+/* Vista de nuevos turnos*/
+
+.modal-background{
+    visibility: hidden;
+}
+
+.modal{
+    visibility: hidden;
+}
+
+.new-turn{
+    position: absolute;
+    width: 40vw;
+    height: 50vh;
+    top: 20vh;
+    left: 20vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*text-align: justify;*/
+}
+
+.new-turn label{
+    justify-self: flex-end;
+}
+
+.new-turn button{
+    background-color: green;
+    border-radius: 1vw;
+}
+
+.new-turn .new-turn-submit{
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
+
+.modal{
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+    width: 30vw;
+    height: 48vh;
+    z-index: 1000;
+    background-color: green;
+    text-align:  center;
+    border-radius: 4vw;
+}
+
+.modal header{
+    visibility: hidden;
+}
+
+.modal-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    height: 88vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 999;
+}
+
+.modal ul{
+    background-color: lightgreen;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    height: 30vh;
+    overflow: auto;
+    padding: 0;
+    border-radius: 4vw;
+}
+
+.modal li{
+    position: relative;
+    background-color: aqua;
+    width: 80%;
+    top: 1vw;
+    margin-top: 1vh;
+    left: 10%;
+    border-radius: 1vw;
+    list-style-type: none;
+}
+
+.modal .blocked{
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.modal .clickeable{
+    cursor: pointer;
+}
+
+.modal .clickeable button{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 1vw;
+}
+
+/*movile*/
+
+@media only screen and (max-width: 70000px) {
+    body header {
+        position: relative;
+        width: 100vw;
+        height: 10vh;
+    }
+
+    .header-nav {
+        position: absolute;
+        left: 0;
+        width: 10vw;
+        height: 10vh;
+    }
+
+    .header-nav ul{
+        visibility: hidden;
+    }
 }

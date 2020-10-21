@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <script src="\js\main.js"></script>
         <meta charset="UTF-8">
         <title>Nombre del Hospital</title>
         <link rel="stylesheet" type="text/css" href="/css/default.css">
+        <script src="\js\main.js"></script>
     </head>
     <body>
         <header class="body-header">
@@ -32,20 +32,24 @@
                     <button class="btn-date-filter" onclick="ShowDateFilter()">Fecha/Día</button>
                     <div class="filter-container" id="filter-container" ondblclick="HideFilter()">
                         <form class="filter" id="filter" onclick="ShowFilter()">
-                            <label>Profesión</label>
-                            <select>
-                                <option>Cirujano</option>
-                                <option>Nutricionista</option>
-                                <option>Guardia</option>
-                            </select>
-                            <label>Médico</label>
-                            <select>
-                                <option>Dr. Ángel</option>
-                                <option>Dr. Nico</option>
-                                <option>Dr. Pepe</option>
-                            </select>
-                            <button>Quitar filtros</button>
-                            <button>Filtrar</button>
+                            <label>Profesión
+                                <select>
+                                    <option>Cirujano</option>
+                                    <option>Nutricionista</option>
+                                    <option>Guardia</option>
+                                </select>
+                            </label>
+                            <label>Médico
+                                <select>
+                                    <option>Dr. Ángel</option>
+                                    <option>Dr. Nico</option>
+                                    <option>Dr. Pepe</option>
+                                </select>
+                            </label>
+                            <div>
+                                <button class="btn-remove-filters" id="btn-remove-filters">Quitar filtros</button>
+                                <button class="btn-filter" id="btn-filter">Filtrar</button>
+                            </div>
                         </form>
                     </div>
                 </section>

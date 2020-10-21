@@ -21,6 +21,11 @@ function ShowDateFilter(){
     show("date-filter-container");
 }
 
+function ShowScheduleFilter(){
+    show("modal");
+    show("modal-background");
+}
+
 function HideFilter(){
     hide("filter");
     hide("filter-container");
@@ -29,4 +34,9 @@ function HideFilter(){
 function HideDateFilter(){
     hide("date-filter");
     hide("date-filter-container");
+}
+
+function HideScheduleFilter(){
+    hide("modal");
+    hide("modal-background");
 }

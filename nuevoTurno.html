@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <title>Nombre del Hospital</title>
         <link rel="stylesheet" type="text/css" href="/css/default.css">
+        <script src="\js\main.js"></script>
     </head>
     <body>
-        <header>
-            <img src="/resources/img/logo.png" alt="" width="200" height="100">
-            <h1>Nombre del Hospital</h1>
-            <nav>
-                <ul>
+        <header class="body-header">
+            <img class="header-logo" src="/resources/img/logo.png" alt="" width="200" height="100">
+            <h1 class="header-title">Nombre del Hospital</h1>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
                     <li><a href="/institucional.html">Sobre la institución</a></li>
                     <li><a href="/listaTurnos.html">Listados de turnos solicitados</a></li>
                     <li><a>Obtener un turno</a></li>
@@ -22,8 +23,8 @@
             </nav>
         </header>
         <main>
-             <a href="/index.html">Home</a> - <a href="/nuevoTurno.html">Nuevo turnos</a>
-            <section>
+            <nav class="breadcrumb"><a href="/index.html">Home</a> - <a href="/nuevoTurno.html">Nuevo turnos</a></nav>
+            <section class="main-section-news">
                 <!-- 
                     Hay que verificar si se le puede otorgar el turno
                     que pidió el usuario...
@@ -34,9 +35,8 @@
                     Si no
                         se notifica al usuario
                 -->
-                <dialog id="respuestaGuardado"></dialog>
-                <h2>Obtener mi turno</h2>
-                <form id="nuevoTurno" method="post" action="intentarGuardarTurno.php">
+                <header><h2>Obtener mi turno</h2></header>
+                <form class="new-turn" id="nuevoTurno" method="post" action="intentarGuardarTurno.php">
                     <h3>Complete el formulario</h3>
                     <label for="nombreApellido">Apellido y Nombre
                         <input type="text" id="nombreApellido" autofocus tabindex="1">
@@ -55,8 +55,8 @@
                     </label>
                     <label for="hora">Hora de turno
                         <input type="time" id="hora" readonly>
+                        <button type="button" id="btnHorarios" onclick="ShowScheduleFilter()">Seleccionar</button>
                     </label>
-                    <button id="btnHorarios" >Seleccionar</button>
                     <label for="medico">Médico
                         <select id="medico" tabindex="7">
                             <option>Dr. Ángel</option>
@@ -64,32 +64,28 @@
                             <option>Dr. Pepe</option>
                         </select>
                     </label>
-                    <button type="submit">Confirmar</button>
+                    <button class="new-turn-submit" type="submit">Confirmar</button>
+                    <output name="Message" id="Message"></output>
                 </form>
-                <!-- Modal: Horarios -->
-                <section id="modalHorarios">
-                    <h4>Horarios</h4>
-                    <ul>
-                        <li>12:00 No disponible</li>
-                        <li>
-                            12:30
-                            <button>+</button>
-                            Agregar
-                        </li>
-                        <li>13:00 No disponible</li>
-                        <li>13:30 No disponible</li>
-                        <li>
-                            14:00
-                            <button>+</button>
-                            Agregar
-                        </li>
-                        <li>
-                            14:30
-                            <button>+</button>
-                            Agregar
-                        </li>
-                    </ul>
-                </section>
+            </section>
+            <!-- Modal: Horarios -->
+            <div class="modal-background" id="modal-background" name="modal-background" ondblclick="HideScheduleFilter()"></div>
+            <section class="modal" id="modal" name="modal">
+                <header><h4>Horarios</h4></header>
+                <ul>
+                    <li class="blocked">12:00 No disponible</li>
+                    <li class="clickeable">
+                        12:30 Agregar
+                    </li>
+                    <li class="blocked">13:00 No disponible</li>
+                    <li class="blocked">13:30 No disponible</li>
+                    <li class="clickeable">
+                        14:00 Agregar
+                    </li>
+                    <li class="clickeable">
+                        14:30 Agregar
+                    </li>
+                </ul>
             </section>
         </main>
         <footer>
