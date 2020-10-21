@@ -58,7 +58,7 @@ main{
     left: 50vw;
     position: absolute;
     z-index: 1000;
-    top: 5vh;
+    top: 0vh;
 }
 
 .main-section{
