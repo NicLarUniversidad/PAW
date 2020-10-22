@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: blue;
+    background-color: #2A69C9;
     margin: 0;
 }
 
 .header-logo{
-    background-color: green;
+    background-color: #1CB2A9;
     width: 10vw;
     /* height: 12vh; */
     max-width:100%;
@@ -19,7 +19,7 @@ body {
 }
 
 .header-title{
-    background-color: cyan;
+    background-color:#89D5FF;
     position: absolute;
     left: 15%;
     top: 0%;
@@ -28,7 +28,7 @@ body {
 }
 
 .body-header{
-    background-color: blue; 
+    background-color:#2A69C9; 
     width: 100vw;
     height: 10vh;
     margin: 0;
@@ -36,7 +36,7 @@ body {
 
 .header-nav{
     position: absolute;
-    background-color: violet;
+    background-color: #8E8BFF;
     width: 10vw; 
     margin: 0;
     height: 87vh;
@@ -46,7 +46,6 @@ main{
     position: absolute;
     width: 80vw; 
     height: 70%;
-    background-color: blue;
     left: 10vw;
     top: 12vh;
     margin: 0;
@@ -102,13 +101,13 @@ footer{
     left: 0vw;
     width: 100vw;
     height: 10vh;
-    background-color: black;
-    color: green;
+    background-color:#041B3D;
+    color: #3EAC2C;
     text-align: center;
 }
 
 .main-section header{
-    background-color: deepskyblue;
+    background-color: #89B8FF;
     width: 90vw;
     height: 10vh;
     margin: 0;
@@ -122,7 +121,7 @@ footer{
 }
 
 .header-nav-list{
-    background-color: green;
+    background-color: #1CB2A9;
     top: 1vh;
     left: 1vw;
     width: 8vw;
@@ -556,6 +555,72 @@ button{
     cursor: pointer;
     border-radius: 1vw;
 }
+
+
+/*Obra Social*/
+.main-section .lab-buscar {
+    position: relative;
+    top: 15vh;
+    left: 25vw;
+    width: 10vw;
+    height: 7vh;
+    text-align: right;
+}
+
+.main-section .os-1{
+    background-color:#A7FEEE;
+    position: relative;
+    top: 15vh;
+    left: 3vw;
+    width: 81vw;
+    height: 15vh;
+    text-align: left;
+
+}
+
+.main-section .os-1 h2{
+    position: relative;
+    text-align: left;
+    top: 1vh;
+    left: 2vw;
+    height: 2vh;
+}
+
+.main-section .os-1 p{
+    position: relative;
+    text-align: left;
+    top: 2vh;
+    left: 3vw;
+    height: 1vh;
+}
+
+
+/* Institucional*/
+.main-section .items-institucional{
+    width: 75vw;
+    height: 65vh;
+    top: 20vh;
+    left: 8vw;
+    background-color: rgba(139, 139, 139, 0.3);
+    position: relative;
+    padding: 0;
+}
+
+
+.main-section .items-institucional img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.foot-institucional{
+    position: fixed;
+}
+
+
 
 /*movile*/
 
