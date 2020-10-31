@@ -216,7 +216,7 @@ footer{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;/*todo: Conservar relacion de aspecto de la imagen*/
     height: 100%;
     z-index: -1;
 }
@@ -327,7 +327,7 @@ footer{
 
 .date-filter table{
     position: absolute;
-    left: 5vw;
+    left: 2vw;
     top: 16vh;
     background-color: aqua;
     border-radius: 1vw;
@@ -469,13 +469,14 @@ button{
     height: 50vh;
     top: 20vh;
     left: 0vw;
-    display: grid;
-    grid-template-columns: 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr; */
     /*text-align: justify;*/
 }
 
 .new-turn label{
     justify-self: flex-end;
+    
 }
 
 .new-turn button{
@@ -637,6 +638,10 @@ button{
         height: 10vh;
         z-index: 1000;
         cursor: pointer;
+        background-image: url("/resources/img/UI/hamburger.png");
+        background-size: 8vw 8vh;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .header-nav ul{
